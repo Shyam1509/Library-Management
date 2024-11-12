@@ -3,6 +3,6 @@ const { addBook } = require("../controllers/bookController");
 
 const bookRoutes = express.Router();
 
-// bookRoutes.post("/add-book", addBook);
+bookRoutes.post("/add-book", addBook);
 
 module.exports = bookRoutes;
