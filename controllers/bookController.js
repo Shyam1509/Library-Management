@@ -18,14 +18,21 @@ const addBook = async (req, res) => {
     }
 }
 
-const search_book = async (req, res) => {
+const searchBook = async (req, res) => {
+    const { q } = req.query
+
     try {
         
-        const { name } = req.body
+        const books = await Book.find({
+
+            name: ({ $regex: q, $options: "i"})
+        })
+        res.status(200).json(books)
         
     } catch (error) {
+        console.log(error);
         
     }
 }
 
-module.exports = { addBook };
+module.exports = { addBook, searchBook };
