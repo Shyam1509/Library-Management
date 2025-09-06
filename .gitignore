@@ -1,15 +1,91 @@
-# Node modules
+# Dependencies
+.env
 node_modules/
 **/node_modules/
+package-lock.json
+**/package-lock.json
 
-# Logs
+/.pnp
+.pnp.js
+
+# Build outputs
+/dist/
+**/dist/
+/build/
+**/build/
+/out/
+**/out/
+
+# Angular specific
+.angular/
+**/.angular/
+.angular/cache/
+**/.angular/cache/
+.angulardoc.json
+**/.angulardoc.json/
+
+# Testing
+/coverage/
+**/coverage/
+/.nyc_output
+**/.nyc_output
+
+# Cache and logs
+.cache/
+**/.cache/
+*.log
+**//*.log
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
-
-# Build output
-dist/
-build/
+pnpm-debug.log*
+lerna-debug.log*
 
 # Environment variables
 .env
+.env.*
+**/.env
+**/.env.*
+!.env.example
+
+# IDE - VSCode
+.vscode/*
+**/.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+
+# IDE - Other
+.idea/
+**/.idea/
+*.sublime-workspace
+**/*.sublime-workspace
+.project
+**/.project
+.settings/
+**/.settings/
+
+# OS
+.DS_Store
+**/.DS_Store
+Thumbs.db
+**/Thumbs.db
+
+# Temp files
+.temp/
+**/.temp/
+.tmp/
+**/.tmp/
+
+# Runtime
+*.pid
+**/*.pid
+*.seed
+**/*.seed
+*.pid.lock
+**/*.pid.lock
+
+# Diagnostic reports
+report.[0-9]*.[0-9]*.[0-9]*.[0-9]*.json
+**/report.[0-9]*.[0-9]*.[0-9]*.[0-9]*.json
