@@ -1,0 +1,23 @@
+{
+  "development": {
+    "username": "root",
+    "password": "Shamal@1512",
+    "database": "db_dev_library_management",
+    "host": "127.0.0.1",
+    "dialect": "mysql"
+  },
+  "test": {
+    "username": "root",
+    "password": "Shamal@1512",
+    "database": "db_test_library_management",
+    "host": "127.0.0.1",
+    "dialect": "mysql"
+  },
+  "production": {
+    "username": "root",
+    "password": "Shamal@1512",
+    "database": "db_prod_library_management",
+    "host": "127.0.0.1",
+    "dialect": "mysql"
+  }
+}
