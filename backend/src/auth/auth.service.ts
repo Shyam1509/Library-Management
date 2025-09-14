@@ -24,7 +24,6 @@ export class AuthService {
             name,
             email,
             password: hashedPassword,
-            role: 'member', // Default role
         }as any);
 
         const payload = { username: newUser.email, sub: newUser.id, role: newUser.role };

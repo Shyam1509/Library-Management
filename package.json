@@ -4,11 +4,14 @@
   "scripts": {
     "postinstall": "run-s install:*",
     "install:backend": "cd backend && npm install",
+    "install:frontend": "cd frontend && npm install",
     "start": "run-p start:*",
     "start:backend": "cd backend && npm start",
+    "start:frontend": "cd frontend && ng serve --proxy-config proxy.conf.json",
     "migration:run": "cd backend && npx sequelize-cli db:migrate"
   },
   "devDependencies": {
+    "concurrently": "^9.2.1",
     "npm-run-all": "^4.1.5"
   },
   "dependencies": {

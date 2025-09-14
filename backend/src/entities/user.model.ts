@@ -36,7 +36,7 @@ export class User extends Model<User> {
   @Column({
     type: DataType.ENUM('admin', 'member'),
     allowNull: false,
-    defaultValue: 'member',
+    defaultValue: 'admin',
   })
   declare role: string;
 
