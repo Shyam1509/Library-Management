@@ -1,0 +1,17 @@
+{
+  "name": "library-management",
+  "private": true,
+  "workspaces": [
+    "backend",
+    "frontend"
+  ],
+  "scripts": {
+  "start": "concurrently \"npm run start -w backend\" \"npm start -w frontend\"",
+  "start:backend": "npm run start -w backend",
+  "start:frontend": "npm start -w frontend",
+  "install:all": "npm install --workspaces"
+},
+  "devDependencies": {
+    "concurrently": "^9.2.1"
+  }
+}
